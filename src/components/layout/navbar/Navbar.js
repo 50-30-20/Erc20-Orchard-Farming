@@ -17,7 +17,7 @@ import NotificationsIcon from '@material-ui/icons/Notifications'
 import MoreIcon from '@material-ui/icons/MoreVert'
 import { StylesProvider } from '@material-ui/core/styles'
 import './Navbar.css'
-import logo from '../../../images/logo.jpg'
+import logo from '../../../images/woman-tree.png'
 
 export const Navbar = withRouter(({ account, loadWeb3 }) => {
   const [anchorEl, setAnchorEl] = React.useState(null)
@@ -42,6 +42,7 @@ export const Navbar = withRouter(({ account, loadWeb3 }) => {
   const handleMobileMenuOpen = (event) => {
     setMobileMoreAnchorEl(event.currentTarget)
   }
+
 
   const menuId = 'primary-search-account-menu'
   const renderMenu = (
@@ -103,7 +104,7 @@ export const Navbar = withRouter(({ account, loadWeb3 }) => {
   return (
     <StylesProvider injectFirst>
       <div className="grow">
-        <AppBar position="static">
+        <AppBar position="static" style={{backgroundColor: 'green'}}>
           <Toolbar>
             <Link to="/" className="whiteLink">
               <img src={logo} alt="logo" className="logo" />
@@ -119,6 +120,10 @@ export const Navbar = withRouter(({ account, loadWeb3 }) => {
 
             <Button className="whiteLink" component={Link} to="/create-pet">
               Create Pet
+            </Button>
+
+            <Button className="whiteLink" component={Link} to="/pet-donate/:id">
+              Donate
             </Button>
 
             <div className="grow" />

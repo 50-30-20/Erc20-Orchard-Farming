@@ -19,7 +19,7 @@ import {
   IconButton,
 } from '@material-ui/core'
 
-import { apiKey } from '../../../APIKEYS'
+// import { apiKey } from '../../../APIKEYS'
 import './PetDetails.css'
 import { CircularStatic } from '../../commons/CircularProgressWithLabel'
 import SeeMoreWork from '../see-more-work/SeeMoreWork'

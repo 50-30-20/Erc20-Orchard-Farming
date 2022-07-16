@@ -9,13 +9,13 @@ import {
   Typography,
 } from '@material-ui/core'
 import './Footer.css'
-import logo from '../../../images/logo.jpg'
+import logo from '../../../images/woman-tree.png'
 
 function Footer() {
   return (
     <StylesProvider injectFirst>
       <footer>
-        <AppBar className="primary-color marginT-3 pad-2" position="static">
+        <AppBar className="marginT-3 pad-2" position="static" style={{backgroundColor: 'green'}}>
           <Grid component={Container} container>
             <Grid item xs={12} sm={3}>
               <img src={logo} alt="logo" className="footer-logo" />

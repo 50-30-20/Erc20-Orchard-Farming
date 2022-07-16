@@ -6,8 +6,11 @@ import Button from '@material-ui/core/Button'
 import ImageListItemBar from '@material-ui/core/ImageListItemBar'
 import './PetGallery.css'
 import CircularStatic from '../commons/CircularProgressWithLabel'
-import { apiKey } from '../../APIKEYS'
+// import { apiKey } from '../../APIKEYS'
 import { Grid } from '@material-ui/core'
+
+import dummyPNG from '../../images/see-more-work/1.jpeg'
+
 
 function PetGallery() {
   const [petsData, setPetsData] = useState([])
@@ -63,17 +66,35 @@ function PetGallery() {
     loadPets()
   }, [])
 
+  console.log('petsData', petsData);
+
+  const petsDataa = [
+    {cid: 1, created: "", description: 'lorem ipsum descriptio asjdnadnj', image: "https://ipfs.io/ipfs/bafybeifa4admkjcfaeefrvvxgqpsgqtmtx23xu2smm76ior6zxnf62nxuy/b4.jpeg", name: ''},
+    {cid: 1, created: "", description: 'lorem ipsum descriptio asjdnadnj', image: "https://ipfs.io/ipfs/bafybeifa4admkjcfaeefrvvxgqpsgqtmtx23xu2smm76ior6zxnf62nxuy/b4.jpeg", name: ''},
+    {cid: 1, created: "", description: '', image: "https://ipfs.io/ipfs/bafybeifa4admkjcfaeefrvvxgqpsgqtmtx23xu2smm76ior6zxnf62nxuy/b4.jpeg", name: ''},
+    {cid: 1, created: "", description: '', image: "https://ipfs.io/ipfs/bafybeifa4admkjcfaeefrvvxgqpsgqtmtx23xu2smm76ior6zxnf62nxuy/b4.jpeg", name: ''},
+    {cid: 1, created: "", description: '', image: "https://ipfs.io/ipfs/bafybeifa4admkjcfaeefrvvxgqpsgqtmtx23xu2smm76ior6zxnf62nxuy/b4.jpeg", name: ''},
+  ]
+
   return (
     <div style={{ minHeight: '70vh', paddingBottom: '3rem' }}>
       {loading ? (
         <CircularStatic />
       ) : (
         <div style={{ flexGrow: 1 }}>
-          <Grid container spacing={1}>
-            {petsData.length ? (
-              petsData.map((pet, index) => (
-                <Grid item xs={6} sm={3} key={index}>
-                  <ImageListItem style={{ height: '450px', listStyle: 'none' }}>
+          <Grid container spacing={1} style={{display: 'flex', justifyContent: 'center'}}>
+            {petsData.length != 0 ?
+             (
+              petsDataa.map((pet, index) => (
+                <Grid item key={index} style={{width: '80%', transform: 'translateX(10%)'}}>
+                  <div className='tree-card'>
+                    <img src={pet.image} alt={pet.name} style={{width: '100%', height: '100%', borderRadius: '5px', objectFit: 'cover'}}/>
+                    <div>
+                      <p>{pet.description}</p>
+                      <a href={`/pet-details/${pet.cid}`}>View details</a>
+                    </div>
+                  </div>
+                  {/* <ImageListItem style={{ height: '450px', listStyle: 'none' }}>
                     <img src={pet.image} alt={pet.name} />
                     <ImageListItemBar
                       title={pet.name}
@@ -95,10 +116,11 @@ function PetGallery() {
                         </IconButton>
                       }
                     />
-                  </ImageListItem>
+                  </ImageListItem> */}
                 </Grid>
               ))
-            ) : (
+            )
+            : (
               <h2>No Pets Yet...</h2>
             )}
           </Grid>

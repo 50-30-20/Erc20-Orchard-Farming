@@ -9,6 +9,7 @@ import CreatePet from './components/create-post/CreatePet'
 
 import Web3 from 'web3'
 import MyPet from './abis/Pet.json'
+import DonateCrypto from './components/donate/DonateCrypto'
 
 function App() {
   const [account, setAccount] = React.useState('')
@@ -50,9 +51,11 @@ function App() {
         <Route exact path="/" component={Home} />
         <Switch>
           <Route exact path="/create-pet" component={CreatePet} />
-
           <Route path="/pet-details/:petId">
             <PetDetails account={account} contractData={contractData} />
+          </Route>
+          <Route path="/pet-donate/:petId">
+            <DonateCrypto account={account} contractData={contractData} />
           </Route>
         </Switch>
         <Footer />

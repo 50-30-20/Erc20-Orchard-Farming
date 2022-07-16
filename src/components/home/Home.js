@@ -22,6 +22,7 @@ function Home() {
             color="primary"
             clickable
             onClick={handleDelete}
+            className="label-btn"
           />
 
           <Chip
@@ -29,6 +30,7 @@ function Home() {
             label="Last Week"
             clickable
             onClick={handleDelete}
+            className="label-btn"
           />
 
           <Chip
@@ -36,6 +38,7 @@ function Home() {
             label="Last Month"
             clickable
             onClick={handleDelete}
+            className="label-btn"
           />
 
           <Chip
@@ -43,6 +46,7 @@ function Home() {
             label="All Time"
             clickable
             onClick={handleDelete}
+            className="label-btn"
           />
         </div>
         <PetGallery />
