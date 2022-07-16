@@ -125,7 +125,7 @@ export const Navbar = withRouter(({ account, loadWeb3 }) => {
             <Button className="whiteLink" component={Link} to="/pet-donate/:id">
               Donate
             </Button>
-
+ 
             <div className="grow" />
             <div className="sectionDesktop">
               {account ? (
