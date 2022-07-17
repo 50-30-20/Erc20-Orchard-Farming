@@ -126,7 +126,7 @@ function PetDetails({ account, contractData }) {
                   color="primary"
                   onClick={mintNFT}
                 >
-                  Mint NFT
+                 Create Bond
                 </Button>
               </div>
 
@@ -152,7 +152,7 @@ function PetDetails({ account, contractData }) {
                 variant="subtitle1"
                 className="details-text"
               >
-                Pet's Details
+                Orchard's Details
               </Typography>
 
               <Typography variant="body2" gutterBottom className="details-text">
@@ -193,7 +193,7 @@ function PetDetails({ account, contractData }) {
               <form noValidate autoComplete="off">
                 <TextField
                   id="outlined-basic"
-                  label="Comment"
+                  label="Add your input about this orchard that can help the DAO"
                   variant="outlined"
                   value={comment}
                   onChange={handleChange}
@@ -201,37 +201,8 @@ function PetDetails({ account, contractData }) {
                 />
               </form>
               <Button type="submit" variant="contained" onClick={handleSubmit}>
-                Add comment
+                Stake/Delagate 
               </Button>
-
-              {pet?.comments ? (
-                pet.comments.map((comment, id) => (
-                  <List key={id}>
-                    <ListItem style={{ paddingLeft: '0px' }}>
-                      <ListItemAvatar>
-                        <Avatar alt="Remy Sharp" />
-                      </ListItemAvatar>
-                      <ListItemText
-                        secondary={
-                          <React.Fragment>
-                            <Typography
-                              component="span"
-                              variant="body2"
-                              className="inline"
-                              color="textPrimary"
-                            >
-                              {comment.author}
-                            </Typography>
-                            {` ${comment.content}`}
-                          </React.Fragment>
-                        }
-                      />
-                    </ListItem>
-                  </List>
-                ))
-              ) : (
-                <h2>No comments</h2>
-              )}
             </Grid>
           </Grid>
 

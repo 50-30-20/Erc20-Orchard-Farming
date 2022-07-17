@@ -68,13 +68,13 @@ function PetGallery() {
 
   console.log('petsData', petsData);
 
-  const petsDataa = [
-    {cid: 1, created: "", description: 'lorem ipsum descriptio asjdnadnj', image: "https://ipfs.io/ipfs/bafybeifa4admkjcfaeefrvvxgqpsgqtmtx23xu2smm76ior6zxnf62nxuy/b4.jpeg", name: ''},
-    {cid: 1, created: "", description: 'lorem ipsum descriptio asjdnadnj', image: "https://ipfs.io/ipfs/bafybeifa4admkjcfaeefrvvxgqpsgqtmtx23xu2smm76ior6zxnf62nxuy/b4.jpeg", name: ''},
-    {cid: 1, created: "", description: '', image: "https://ipfs.io/ipfs/bafybeifa4admkjcfaeefrvvxgqpsgqtmtx23xu2smm76ior6zxnf62nxuy/b4.jpeg", name: ''},
-    {cid: 1, created: "", description: '', image: "https://ipfs.io/ipfs/bafybeifa4admkjcfaeefrvvxgqpsgqtmtx23xu2smm76ior6zxnf62nxuy/b4.jpeg", name: ''},
-    {cid: 1, created: "", description: '', image: "https://ipfs.io/ipfs/bafybeifa4admkjcfaeefrvvxgqpsgqtmtx23xu2smm76ior6zxnf62nxuy/b4.jpeg", name: ''},
-  ]
+  // const petsDataa = [
+  //   {cid: 1, created: "", description: 'lorem ipsum descriptio asjdnadnj', image: "https://ipfs.io/ipfs/bafybeifa4admkjcfaeefrvvxgqpsgqtmtx23xu2smm76ior6zxnf62nxuy/b4.jpeg", name: ''},
+  //   {cid: 1, created: "", description: 'lorem ipsum descriptio asjdnadnj', image: "https://ipfs.io/ipfs/bafybeifa4admkjcfaeefrvvxgqpsgqtmtx23xu2smm76ior6zxnf62nxuy/b4.jpeg", name: ''},
+  //   {cid: 1, created: "", description: '', image: "https://ipfs.io/ipfs/bafybeifa4admkjcfaeefrvvxgqpsgqtmtx23xu2smm76ior6zxnf62nxuy/b4.jpeg", name: ''},
+  //   {cid: 1, created: "", description: '', image: "https://ipfs.io/ipfs/bafybeifa4admkjcfaeefrvvxgqpsgqtmtx23xu2smm76ior6zxnf62nxuy/b4.jpeg", name: ''},
+  //   {cid: 1, created: "", description: '', image: "https://ipfs.io/ipfs/bafybeifa4admkjcfaeefrvvxgqpsgqtmtx23xu2smm76ior6zxnf62nxuy/b4.jpeg", name: ''},
+  // ]
 
   return (
     <div style={{ minHeight: '70vh', paddingBottom: '3rem' }}>
@@ -85,7 +85,7 @@ function PetGallery() {
           <Grid container spacing={1} style={{display: 'flex', justifyContent: 'center'}}>
             {petsData.length != 0 ?
              (
-              petsDataa.map((pet, index) => (
+              petsData.map((pet, index) => (
                 <Grid item key={index} style={{width: '80%', transform: 'translateX(10%)'}}>
                   <div className='tree-card'>
                     <img src={pet.image} alt={pet.name} style={{width: '100%', height: '100%', borderRadius: '5px', objectFit: 'cover'}}/>
