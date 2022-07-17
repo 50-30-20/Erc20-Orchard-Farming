@@ -1,23 +1,31 @@
-# PetGram
-PetGram is a decentralized version of the Instagram platform where each viewer pays to have access to the exclusive content of their favorite pets. This creates a more strong relationship between pets and fans which allows fans to connect with their favorite pet in a more personalized way.  Whenever a viewer goes to PetGram will be able to check sample works from different pets, see details from specific pets and unlock exclusive content. The data is stored on IPFS and the generated hash will be used to create an NFT of a photo.
+# Orchard
+The project aims to support Orchards (fruit & Nut farming) for fruitfully harvest.
+
+Technical Flow:-
+1) Orchards register their farms, which are represented as NFT with attributes including the sq area of the land, Name of the fruits grown, etc.
+2) User supports these farms ( real life farm) they stake (donate) on the platform.
+3) To keep things fair so small Orchards too can raise collateral. The donations are distributed randomly.
+4) The random choice is computed from chainlink VRF so the donation to orchards is fair and unpredictable.
+5) The yield is returned to donators (stakers) by orchards by the amount raised by the harvest. The harvest reward is represented as ERC20 (mock DAI, USDT) but in real case scenario it would ETH etc
 
 
 # How it's made
-PetGram application makes use of the following softwares:
+
+Orchard application makes use of the following softwares:
+
 ### `NFTStorage` for data storage on IPFS that generates a transation hash used to create an NFT of a photo.
-
-### `Unlock Protocol` to allow users to pay for exclusive content this protocol was a big part of our use case.
-
 ###  `Solidity`  for the smart contract
 ###  `OpenZeppelin ERC721`  we use the ERC721 template for a faster development of the PetGram smart contract
-
 ###  `Ganache`  for local blockchain development
- ###  `Polygon, Matic Network` the network I deployed the app
+###  `Rinkeby` the network I deployed the app
 ###  `React Js, Material-ui,  Web3` React Js for the frontend,  Material-ui and Web3 to connect to blockchain.
+###  `Chainlink` To generate random number so funds are distributed randomly I have used Chainlink VRF.
 
 ## Demo
-- [Home Page](https://6119c859fed150c8471f90fd--petgrams.netlify.app/)
-  ![Main Page](https://raw.githubusercontent.com/electrone901/petgram/main/src/images/cover.png) <br> <br>
+- [Home Page](https://i.imgur.com/WaQ2Ru9.png)
+- [Donate Page](https://i.imgur.com/FHMHw0x.png)
+- [Create DAO Proposal](https://i.imgur.com/2XVgmwl.png) 
+- [Vote / Stake / Donate] (https://i.imgur.com/wSoQJOL.png)<br> <br>
 
 # Getting Started
 ### `yarn start`
