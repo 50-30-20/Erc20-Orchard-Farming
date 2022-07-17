@@ -235,19 +235,12 @@ function PetDetails({ account, contractData }) {
             </Grid>
           </Grid>
 
-          {/* <div onClick={checkout} style={{ cursor: 'pointer' }}>
-            Unlock to see more work!{' '}
-            <span aria-label="locked" role="img">
-              🔒
-            </span>
-          </div> */}
-
-          <SeeMoreWork
+          {/* <SeeMoreWork
           petName={petName}
             unlock={unlock}
             setUnlock={setUnlock}
             checkout={checkout}
-          />
+          /> */}
         </div>
       </Container>
     </StylesProvider>

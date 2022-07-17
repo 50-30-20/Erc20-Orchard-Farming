@@ -5,7 +5,7 @@ import { Navbar } from './components/layout/navbar/Navbar'
 import Footer from './components/layout/footer/Footer'
 import Home from './components/home/Home'
 import PetDetails from './components/home/pet-details/PetDetails'
-import CreatePet from './components/create-post/CreatePet'
+import CreateOrchard from './components/create-post/CreateOrchard'
 
 import Web3 from 'web3'
 import MyPet from './abis/Pet.json'
@@ -50,7 +50,7 @@ function App() {
         <Navbar account={account} loadWeb3={loadWeb3} />
         <Route exact path="/" component={Home} />
         <Switch>
-          <Route exact path="/create-pet" component={CreatePet} />
+          <Route exact path="/create-pet" component={CreateOrchard} />
           <Route path="/pet-details/:petId">
             <PetDetails account={account} contractData={contractData} />
           </Route>

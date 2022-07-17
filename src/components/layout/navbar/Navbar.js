@@ -111,7 +111,7 @@ export const Navbar = withRouter(({ account, loadWeb3 }) => {
             </Link>
             <Link to="/" className="whiteLink">
               <Typography className="title" variant="h6" noWrap>
-                PetGram
+                DeOrchad
               </Typography>
             </Link>
             <Button className="whiteLink" component={Link} to="/">
@@ -119,7 +119,7 @@ export const Navbar = withRouter(({ account, loadWeb3 }) => {
             </Button>
 
             <Button className="whiteLink" component={Link} to="/create-pet">
-              Create Pet
+              Create-Orchard-Proposal
             </Button>
 
             <Button className="whiteLink" component={Link} to="/pet-donate/:id">
