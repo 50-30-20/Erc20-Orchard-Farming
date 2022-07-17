@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button'
 import ImageListItemBar from '@material-ui/core/ImageListItemBar'
 import './PetGallery.css'
 import CircularStatic from '../commons/CircularProgressWithLabel'
-// import { apiKey } from '../../APIKEYS'
+import { apiKey } from '../../APIKEYS'
 import { Grid } from '@material-ui/core'
 
 import dummyPNG from '../../images/see-more-work/1.jpeg'

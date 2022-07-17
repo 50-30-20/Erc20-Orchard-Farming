@@ -11,7 +11,7 @@ import {
 } from '@material-ui/core'
 import PhotoCamera from '@material-ui/icons/PhotoCamera'
 import { NFTStorage, File } from 'nft.storage'
-// import { apiKey } from '../../APIKEYS'
+import { apiKey } from '../../APIKEYS'
 import CircularStatic from '../commons/CircularProgressWithLabel'
 import './CreatePet.css'
 
