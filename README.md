@@ -15,7 +15,7 @@ Orchard application makes use of the following softwares:
 
 ### `NFTStorage`: for data storage on IPFS that generates a transation hash used to create an NFT of a photo.
 ###  `Solidity`:  for the smart contract
-###  `OpenZeppelin ERC721`:  we use the ERC721 template for a faster development of the PetGram smart contract
+###  `OpenZeppelin ERC721`:  we use the ERC721 template for a faster development of the Orchards smart contract
 ###  `Ganache`:  for local blockchain development
 ###  `Rinkeby`: the network I deployed the app
 ###  `React Js, Material-ui,  Web3`: React Js for the frontend,  Material-ui and Web3 to connect to blockchain.

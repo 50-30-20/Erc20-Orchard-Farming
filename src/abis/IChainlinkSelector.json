@@ -1,0 +1,235 @@
+{
+  "contractName": "IChainlinkSelector",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getRandomSelector",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.1+commit.df193b15\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getRandomSelector\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/src/contracts/interfaces/IChainlinkSelector.sol\":\"IChainlinkSelector\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/src/contracts/interfaces/IChainlinkSelector.sol\":{\"keccak256\":\"0xdb75d8571e4e51f60dcc8392d980d444bfb788f3fbc9bc9a612064524fd68942\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://dc017e09801780334a677764023cf0e751f94eb991b0241b7f345a8aae989680\",\"dweb:/ipfs/QmZcLfRvBWGyH4faGaLT5kLAHLiSxqKrqKUSEv1HtDyuiU\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ninterface IChainlinkSelector {\n    function getRandomSelector() external view returns (uint256);\n}",
+  "sourcePath": "/Users/sagarbehara/Work/sides/gitcoin/petgram/src/contracts/interfaces/IChainlinkSelector.sol",
+  "ast": {
+    "absolutePath": "project:/src/contracts/interfaces/IChainlinkSelector.sol",
+    "exportedSymbols": {
+      "IChainlinkSelector": [
+        2645
+      ]
+    },
+    "id": 2646,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2639,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:16"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 2645,
+        "linearizedBaseContracts": [
+          2645
+        ],
+        "name": "IChainlinkSelector",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "acd69024",
+            "id": 2644,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getRandomSelector",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2640,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "118:2:16"
+            },
+            "returnParameters": {
+              "id": 2643,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2642,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2644,
+                  "src": "144:7:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2641,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "144:7:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "143:9:16"
+            },
+            "scope": 2645,
+            "src": "92:61:16",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2646,
+        "src": "57:98:16"
+      }
+    ],
+    "src": "32:123:16"
+  },
+  "legacyAST": {
+    "absolutePath": "project:/src/contracts/interfaces/IChainlinkSelector.sol",
+    "exportedSymbols": {
+      "IChainlinkSelector": [
+        2645
+      ]
+    },
+    "id": 2646,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2639,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:16"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 2645,
+        "linearizedBaseContracts": [
+          2645
+        ],
+        "name": "IChainlinkSelector",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "acd69024",
+            "id": 2644,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getRandomSelector",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2640,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "118:2:16"
+            },
+            "returnParameters": {
+              "id": 2643,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2642,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2644,
+                  "src": "144:7:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2641,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "144:7:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "143:9:16"
+            },
+            "scope": 2645,
+            "src": "92:61:16",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2646,
+        "src": "57:98:16"
+      }
+    ],
+    "src": "32:123:16"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.1+commit.df193b15.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2022-07-17T21:36:02.713Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
